@@ -47,8 +47,10 @@
             }
             
             else{
-            var elapsedTime = (-1) * (buttonTime - myTime);
-            document.getElementById("target").innerHTML = "Time was "+elapsedTime+" ms";
+              buttonTime = Date.now()
+              buttonTime = buttonTime - myTime
+              console.log(buttonTime)
+              document.getElementById("target").innerHTML = "Time was : " + buttonTime
             }
         }, countd*1000)
         }

@@ -125,6 +125,21 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+
+
+    function newGame() {
+        triesCount = 0
+        animalLocation = Math.floor(Math.random() * 23 + 0)
+        document.getElementById("tries").innerHTML = "Number of tries is 0."
+        for (var i = 0; i < 24; i++) {
+            if (ids[i] == ids[animalLocation])
+                document.getElementById(ids[i]).src = "cat.jpg"
+
+        }
+    }
+
+
+
 </body>
 
 </html>
